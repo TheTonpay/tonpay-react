@@ -1,0 +1,60 @@
+{
+  "name": "@tonpay/react",
+  "version": "0.0.1",
+  "description": "Tonpay React utilities",
+  "main": "./dist/cjs/index.js",
+  "module": "./dist/esm/index.js",
+  "types": "./dist/esm/index.d.ts",
+  "scripts": {
+    "build": "npm run build:esm && npm run build:cjs",
+    "build:esm": "tsc",
+    "build:cjs": "tsc --module commonjs --outDir dist/cjs"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/TheTonpay/tonpay-react.git"
+  },
+  "keywords": [
+    "tonpay",
+    "react",
+    "payment",
+    "ton",
+    "crypto",
+    "blockchain",
+    "payments",
+    "ecommerce"
+  ],
+  "author": "Arterialist",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/TheTonpay/tonpay-react/issues"
+  },
+  "homepage": "https://github.com/TheTonpay/tonpay-react#readme",
+  "dependencies": {
+    "react": "^18.2.0",
+    "@types/react": "18.0.28",
+    "ton": "^13.3.0",
+    "ton-core": "^0.48.0",
+    "@tonpay/core": "^0.0.1",
+    "@tonconnect/sdk": "^2.0.7",
+    "@tonconnect/ui-react": "^0.0.14",
+    "@orbs-network/ton-access": "^2.2.2"
+  },
+  "files": [
+    "dist",
+    "LICENSE",
+    "README.md"
+  ],
+  "devDependencies": {
+    "typescript": "*",
+    "@typescript-eslint/eslint-plugin": "^5.0.0",
+    "eslint-config-prettier": "^8.3.0",
+    "eslint-config-standard-with-typescript": "^32.0.0",
+    "eslint-plugin-import": "^2.25.2",
+    "eslint-plugin-n": "^15.0.0",
+    "eslint-plugin-prettier": "^4.0.0",
+    "eslint-plugin-promise": "^6.0.0",
+    "eslint-plugin-react": "^7.32.1",
+    "prettier": "^2.4.1"
+  }
+}
