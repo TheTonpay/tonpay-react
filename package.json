@@ -35,7 +35,7 @@
     "@types/react": "18.0.28",
     "ton": "^13.3.0",
     "ton-core": "^0.48.0",
-    "@tonpay/core": "^0.0.1",
+    "@tonpay/core": "^0.0.2",
     "@tonconnect/sdk": "^2.0.7",
     "@tonconnect/ui-react": "^0.0.14",
     "@orbs-network/ton-access": "^2.2.2"
