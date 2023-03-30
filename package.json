@@ -1,14 +1,13 @@
 {
   "name": "@tonpay/react",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Tonpay React utilities",
-  "main": "./dist/cjs/index.js",
+  "main": "./dist/esm/index.js",
   "module": "./dist/esm/index.js",
   "types": "./dist/esm/index.d.ts",
   "scripts": {
-    "build": "npm run build:esm && npm run build:cjs",
-    "build:esm": "tsc",
-    "build:cjs": "tsc --module commonjs --outDir dist/cjs"
+    "build": "npm run build:esm ",
+    "build:esm": "tsc"
   },
   "repository": {
     "type": "git",
@@ -32,12 +31,10 @@
   "homepage": "https://github.com/TheTonpay/tonpay-react#readme",
   "dependencies": {
     "react": "^18.2.0",
-    "@types/react": "18.0.28",
+    "@types/react": "^18.0.28",
     "ton": "^13.3.0",
     "ton-core": "^0.48.0",
-    "@tonpay/core": "^0.0.2",
-    "@tonconnect/sdk": "^2.0.7",
-    "@tonconnect/ui-react": "^0.0.14",
+    "@tonpay/core": "^0.0.4",
     "@orbs-network/ton-access": "^2.2.2"
   },
   "files": [

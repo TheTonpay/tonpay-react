@@ -1,9 +1,11 @@
-import { useTonConnectUI } from "@tonconnect/ui-react";
 import { SenderArguments, beginCell, storeStateInit } from "ton-core";
 
-export function useSender() {
-  const [tonConnectUi] = useTonConnectUI();
+type TonConnectUI = {
+  sendTransaction: (args: any) => Promise<any>;
+  connected: boolean;
+};
 
+export function useSender(tonConnectUi: TonConnectUI) {
   return {
     sender: {
       send: async ({ to, value, body, init }: SenderArguments) => {
