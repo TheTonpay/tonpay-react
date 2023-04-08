@@ -1,6 +1,6 @@
 {
   "name": "@tonpay/react",
-  "version": "0.0.6",
+  "version": "0.0.7",
   "description": "Tonpay React utilities",
   "main": "./dist/cjs/index.js",
   "module": "./dist/esm/index.js",
@@ -35,7 +35,7 @@
     "@types/react": "^18.0.28",
     "ton": "^13.3.0",
     "ton-core": "^0.48.0",
-    "@tonpay/core": "^0.1.9",
+    "@tonpay/core": "^0.2.9",
     "@orbs-network/ton-access": "^2.3.1"
   },
   "files": [
